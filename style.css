@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  padding-top: 50px;
+}
+
+.card-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.card-info {
+  width: 300px;
+  height: 400px;
+  border: solid 2px black;
+  text-align: center;
+  margin: 50px;
+  padding: 60px 30px;
+  box-shadow: 0 0 20px grey;
+  background-color: rgb(236, 243, 237);
+}
+
+.card-info > img {
+  width: 110px;
+}
+
+.card-info > * {
+  padding: 3px 0 0 0;
+}
+.card-info > p {
+  text-align: start;
+}
