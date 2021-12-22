@@ -1,41 +1,52 @@
+:root {
+  --avatar-img-size: 100px;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
-.container {
+
+body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  background-image: url("https://www.myfreetextures.com/wp-content/uploads/2013/07/old-brown-vintage-parchment-paper-texture.jpg");
+  background-position: center;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border: solid 2px black;
+  box-shadow: 0 0 20px grey;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   position: relative;
-  padding-top: 50px;
+
+  background-color: rgba(228, 220, 195, 0.5);
 }
 
-.card-avatar {
-  width: 100px;
-  height: 100px;
+.card .avatar {
+  width: var(--avatar-img-size);
+  height: var(--avatar-img-size);
   border-radius: 50%;
   position: absolute;
-}
-
-.card-info {
-  width: 300px;
-  height: 400px;
-  border: solid 2px black;
-  text-align: center;
-  margin: 50px;
-  padding: 60px 30px;
   box-shadow: 0 0 20px grey;
-  background-color: rgb(236, 243, 237);
+  top: calc(var(--avatar-img-size) / 2 * -1);
+  left: calc(50% - var(--avatar-img-size) / 2);
 }
 
-.card-info > img {
-  width: 110px;
+.card h3 {
+  padding-top: 40px;
 }
 
-.card-info > * {
-  padding: 3px 0 0 0;
-}
-.card-info > p {
-  text-align: start;
+.card .logo {
+  width: 100px;
 }
